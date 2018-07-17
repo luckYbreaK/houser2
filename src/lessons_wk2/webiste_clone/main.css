@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: "Montserrat";
+}
+
+header {
+    background: #2C3E50;
+    font-weight: 700;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+}
+
+#header {
+    font-size: 30px;
+    
+}
+
+nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:visted {
+    color:white;
+}
+
+header a:hover {
+    color: #18bc9c;
+}
+
+.bootstrap_container {
+    background: #18bc9c;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0; 
+    font-weight: 700;
+}
+
+.bootstrap_container h1 {
+    font-size: 70px;
+}
+
+.bootstrap_container h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.h3_img {
+    font-size: 70px;
+}
+
+.h2_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio_container {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.about_container {
+    background: #18bc9c;
+}
+
+.contact_container {
+    background: #ffffff;
+}
+
+.location_container {
+    background: #2c3e50;
+}
+
+footer {
+    background: #1a252f;
+}
+
+.font_white {
+    color: white;
+}
+
+.font_header {
+    color: #2C3E50;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.header {
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.portfolio_img_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img_display {
+    width: 330px;
+    height: 240px;
+}
