@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const massive = require('massive');
+const ctrl = require('./controller');
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(bodyParser.json());
 
 
 // ENDPOINTS
-
+app.get("/api/houses", ctrl.readHouses);
 
 massive(CONNECTION_STRING).then(dbInstance => {
     app.set('db', dbInstance);
