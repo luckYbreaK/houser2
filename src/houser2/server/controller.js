@@ -11,9 +11,9 @@ module.exports = {
 
     updateHouse: (req, res, next) => {
         const dbInstance = req.app.get('db');
-        const { name, address, city, state, zip } = req.body
+        const { name, address, city, state, zip, img, mortgage, rent } = req.body
 
-        dbInstance.updateHouse([name, address, city, state, zip])
+        dbInstance.updateHouse([name, address, city, state, zip, img, mortgage, rent])
             .then(() => res.sendStatus(200))
             .catch(err => {
                 res.status(500).send({ errorMessage: "Jump ship! Jump ship! Server ain't working!" });

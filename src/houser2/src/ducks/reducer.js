@@ -17,6 +17,7 @@ const UPDATE_ZIP = "UPDATE_ZIP";
 const UPDATE_IMAGE_URL = "UPDATE_IMAGE_URL";
 const UPDATE_MORTGAGE = "UPDATE_MORTGAGE";
 const UPDATE_RENT = "UPDATE_RENT";
+const RESET_STATE = "RESET_STATE";
 
 export function updateName(name) {
     return {
@@ -74,24 +75,42 @@ export function updateRent(rent) {
     }
 }
 
+export function resetState() {
+    return {
+        type: RESET_STATE,
+        payload: {
+            name: "",
+            address: "",
+            city: "",
+            state: "",
+            zip: 0,
+            imageUrl: "",
+            mortgage: 0,
+            rent: 0
+        }
+    }
+}
+
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case UPDATE_NAME:
-            return Object.assign({}, state, {name: action.payload});
+            return Object.assign({}, state, { name: action.payload });
         case UPDATE_ADDRESS:
-            return Object.assign({}, state, {address: action.payload});
+            return Object.assign({}, state, { address: action.payload });
         case UPDATE_CITY:
-            return Object.assign({}, state, {city: action.payload});
+            return Object.assign({}, state, { city: action.payload });
         case UPDATE_STATE:
-            return Object.assign({}, state, {state: action.payload});
+            return Object.assign({}, state, { state: action.payload });
         case UPDATE_ZIP:
-            return Object.assign({}, state, {zip: action.payload});
+            return Object.assign({}, state, { zip: action.payload });
         case UPDATE_IMAGE_URL:
-            return Object.assign({}, state, {imageUrl: action.payload});
+            return Object.assign({}, state, { imageUrl: action.payload });
         case UPDATE_MORTGAGE:
-            return Object.assign({}, state, {mortgage: action.payload});
+            return Object.assign({}, state, { mortgage: action.payload });
         case UPDATE_RENT:
-            return Object.assign({}, state, {rent: action.payload});
+            return Object.assign({}, state, { rent: action.payload });
+        case RESET_STATE:
+            return Object.assign({}, state, action.payload);
         default:
             return state;
     }

@@ -33,10 +33,10 @@ class StepTwo extends Component {
                 </div>
                 <div className="wizard_bottom">
                     <Link to="/wizard/step1">
-                        <button>Previous Step</button>
+                        <button className="btn_step">Previous Step</button>
                     </Link>
                     <Link to="/wizard/step3">
-                        <button>Next Step</button>
+                        <button className="btn_step">Next Step</button>
                     </Link>
                 </div>
             </div>

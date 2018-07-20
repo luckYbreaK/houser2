@@ -64,3 +64,8 @@ body {
 .btn_pink {
   background: #fec2c2;
 }
+
+.btn_step {
+  background: #3b5249;
+  color: white;
+}

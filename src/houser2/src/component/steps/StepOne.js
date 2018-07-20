@@ -56,7 +56,7 @@ class StepOne extends Component {
                 </div>
                 <div className="wizard_bottom">
                     <Link to="/wizard/step2">
-                        <button>Next Step</button>
+                        <button className="btn_step">Next Step</button>
                     </Link>
                 </div>
             </div>
