@@ -14,6 +14,8 @@ app.use(bodyParser.json());
 
 // ENDPOINTS
 app.get("/api/houses", ctrl.readHouses);
+app.post("/api/house", ctrl.updateHouse);
+app.delete("/api/house/:id", ctrl.deleteHouse);
 
 massive(CONNECTION_STRING).then(dbInstance => {
     app.set('db', dbInstance);

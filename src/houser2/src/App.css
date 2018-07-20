@@ -47,6 +47,11 @@ body {
   padding: 2%;
 }
 
+.wizard_bottom {
+  float: right;
+  padding: 1%;
+}
+
 .city_wrapper {
   display: flex;
   align-items: center;
