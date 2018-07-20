@@ -1,7 +1,6 @@
 module.exports = {
     readHouses: (req, res, next) => {
         const dbInstance = req.app.get('db');
-
         dbInstance.readHouses()
             .then(houses => res.status(200).send(houses))
             .catch(err => {

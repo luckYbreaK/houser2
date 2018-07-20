@@ -18,19 +18,25 @@ export default class Wizard extends Component {
         switch (type) {
             case "name":
                 this.setState({ name: val });
+                break;
             case "address":
                 this.setState({ address: val });
+                break;
             case "city":
                 this.setState({ city: val });
+                break;
             case "state":
-                this.setState({ state: val });
+                break;
             case "zip":
                 this.setState({ zip: Number(val) });
+                break;
+            default:
+                break;
         }
     }
 
     render() {
-        
+
         return (
             <div className="wizard_wrapper">
                 <div className="top">
@@ -42,19 +48,25 @@ export default class Wizard extends Component {
                 <div className="mid_wizard">
                     <div>
                         <h3>Property Name</h3>
-                        <input type="text" onChange={ (e) => this.handleInput("name", e.target.value)}/>
+                        <input type="text" onChange={(e) => this.handleInput("name", e.target.value)} />
                     </div>
                     <div>
                         <h3>Address</h3>
-                        <input type="text" onChange={ (e) => this.handleInput("address", e.target.value)}/>
+                        <input type="text" onChange={(e) => this.handleInput("address", e.target.value)} />
                     </div>
                     <div className="city_wrapper">
-                        <h3>City</h3>
-                        <input type="text" onChange={ (e) => this.handleInput("city", e.target.value)}/>
-                        <h3>State</h3>
-                        <input type="text" onChange={ (e) => this.handleInput("state", e.target.value)}/>
-                        <h3>Zip</h3>
-                        <input type="text" onChange={ (e) => this.handleInput("zip", e.target.value)}/>
+                        <div>
+                            <h3>City</h3>
+                            <input type="text" onChange={(e) => this.handleInput("city", e.target.value)} />
+                        </div>
+                        <div>
+                            <h3>State</h3>
+                            <input type="text" onChange={(e) => this.handleInput("state", e.target.value)} />
+                        </div>
+                        <div>
+                            <h3>Zip</h3>
+                            <input type="text" onChange={(e) => this.handleInput("zip", e.target.value)} />
+                        </div>
                     </div>
                 </div>
             </div>

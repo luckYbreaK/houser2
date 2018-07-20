@@ -36,6 +36,10 @@ body {
   align-items: center;
 }
 
+.house_wrapper {
+  background: #dedede;
+}
+
 .mid_wizard {
   
   height: 70%;
