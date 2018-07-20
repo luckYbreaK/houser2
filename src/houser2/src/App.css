@@ -36,6 +36,18 @@ body {
   align-items: center;
 }
 
+.mid_wizard {
+  
+  height: 70%;
+  width: 96%;
+  padding: 2%;
+}
+
+.city_wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .btn_green {
   background: #8aea92;
 }
